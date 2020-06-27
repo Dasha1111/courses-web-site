@@ -411,22 +411,100 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat_item:last-child {
-  border-right: 1px solid #b5eae0;
+	border-right: 1px solid #b5eae0;
 }
 
 .stat_count{
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 10px;
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
 
 }
 
 .stat_text{
-font-size: 14px;
-text-transform: uppercase;
-font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', Arial, sans-serif;
 }
+
+
+/*    Services    */
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services_item {
+	width: 33.33333%;
+	padding: 0 35px 40px 85px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.services_item--border {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.services_icon {
+	position: absolute;
+	top: 0;
+	left: 28px;
+	z-index: 1;
+}
+
+.services_title {
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.services_text {
+	font-size: 15px;
+	color: #999;
+}
+
+/*  Devices  */
+
+.section--devices {
+	margin-bottom: 40px;
+	padding-bottom: 0;
+	background: url(../image/back_devices.jpg) center no-repeat;
+	background-size: cover;
+  
+}
+
+.devices {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+	left: 40px;
+}
+
+
+.devices_item {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.devices_item--iphone {
+	position: absolute;
+	bottom: -80px;
+	right: 0;
+	z-index: 1;
+}
+
+
+
+
+
+
+
 
 
 /* Media */
@@ -436,25 +514,25 @@ font-family: 'Montserrat', Arial, sans-serif;
 
   /* Header */
 
- .welcome {
+	.welcome {
    font-size: 121px;
  } 
- .discription {
+	.discription {
    font-size: 57px;
  }
 }
 
 @media (max-width: 990px) {
-  .welcome {
+	.welcome {
     font-size: 120px;
   } 
-  .discription {
+	.discription {
     font-size: 54px;
   }
 
   /* Statistics */
 
-  .stat_item {
+	.stat_item {
     flex: none;
     width: 33.333333%;
     border: 0;
@@ -463,27 +541,48 @@ font-family: 'Montserrat', Arial, sans-serif;
 
   }
 
-  .stat_item:last-child {
-    border-right: 0;
+	.stat_item:last-child {
+	border-right: 0;
   }
 
     .stat{
       justify-content: center;
     }
+	
+	
+    /* Services */
+
+    .services_item {
+      width: 50%;
+      padding-bottom: 0;
+
+    }
+
+    .services_item--border {
+      border-bottom: 0;
+    }
+
 
 }
 
 @media (max-width: 770px) {
-  .nav {
+	.nav {
     display: none;
   }
 
-  .slider_text {
+	.slider_text {
     display: none;
   }
 
-  .slider_item.active:before {
+	.slider_item.active:before {
     width: 50%;
+  }
+
+	.welcome {
+    font-size: 101px;
+  } 
+	.discription {
+    font-size: 50px;
   }
 
   
@@ -517,82 +616,107 @@ font-family: 'Montserrat', Arial, sans-serif;
 	}
 
   /* Card */
-  .card {
+	.card {
     margin-top: 50px;
     justify-content: center;
     
   }
-  .card_item {
+	.card_item {
     width: 100%;
     max-width: 410px;
     margin-bottom: 30px;
   }
 
-  .card_item:last-child {
+	.card_item:last-child {
     margin-bottom: 0;
   }
 
   /* Section */
 
-  .section {
+	.section {
     padding: 40px 0;
   }
 
-  .section--devices {
+	.section--devices {
     padding-bottom: 0;
   }
+  
+  
+   /* Services */
 
-  .welcome {
-    font-size: 101px;
-  } 
-  .discription {
-    font-size: 50px;
+   .services {
+     justify-content: center;
+   }
+   .services_item {
+    width: 100%;
+    max-width: 400px;
+
+    padding-left: 55px;
+	padding-right: 0;
   }
 
+  .services_icon {
+    left: 0;
+  }
+
+	
 }
 
 
 
 @media (max-width: 575px) {
-  .welcome {
+	.welcome {
     font-size: 53px;
   } 
-  .discription {
+	.discription {
     font-size: 35px;
   }
 
 
   /* Section */
 
-  .section_header {
+	.section_header {
     margin-bottom: 50px;
   }
-.section_title {
-font-size: 24px;
+	.section_title {
+	font-size: 24px;
 }
 
-.section_suptitle {
-font-size: 20px;
+	.section_suptitle {
+	font-size: 20px;
 }
 
-.section_title:after {
-  margin: 20px auto;
+	.section_title:after {
+	margin: 20px auto;
 }
 
 /* Statistics */
 
-.stat_item {
-  width: 100%;
-  border-bottom: 1px solid #b5eae0;
-
+	.stat_item {
+	width: 100%;
+	border-bottom: 1px solid #b5eae0;
 }
 
-.stat_item:last-child {
-  border-bottom: 0;
+	.stat_item:last-child {
+	border-bottom: 0;
 }
 
-.stat_count {
-  font-size: 52px;
+	.stat_count {
+	font-size: 52px;
 }
+
+
+	/* Devices */
+
+	.devices {
+	max-width: 320px;
+}
+
+	.devices_item--iphone {
+	width: 180px;
+	bottom: -50px;
+	right: -80px; 
+}
+
 
 }
